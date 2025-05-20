@@ -1,0 +1,146 @@
+{
+  "name": "Nexus",
+  "type": "document",
+  "description": "A premium, modern portfolio template for creative professionals with unique sections and icon-based design",
+  "version": "1.0.0",
+  "categories": [
+    "developer",
+    "portfolio",
+    "creative",
+    "professional",
+    "designer"
+  ],
+  "tags": [
+    "responsive",
+    "dark-mode",
+    "animated",
+    "premium",
+    "modern",
+    "icon-based"
+  ],
+  "author": "We-Build",
+  "customData": {
+    "preview": {
+      "thumbnail": "",
+      "fullsize": ""
+    },
+    "sections": [
+      {
+        "id": "hero",
+        "name": "Hero Section",
+        "dataFile": "data/personalData.ts",
+        "required": true,
+        "schema": {
+          "firstName": "string",
+          "lastName": "string",
+          "title": "string",
+          "greeting": "string",
+          "status": "string",
+          "summary": "string",
+          "profileImage": "string",
+          "resumeUrl": "string"
+        }
+      },
+      {
+        "id": "expertise",
+        "name": "Expertise Section",
+        "dataFile": "data/expertiseData.ts",
+        "required": true,
+        "schema": {
+          "skills": {
+            "type": "array",
+            "items": {
+              "name": "string",
+              "level": "number"
+            }
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "name": "string",
+              "description": "string"
+            }
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "name": "string",
+              "level": "string"
+            }
+          }
+        }
+      },
+      {
+        "id": "work",
+        "name": "Work Section",
+        "dataFile": "data/projectsData.ts",
+        "required": true,
+        "schema": {
+          "projects": {
+            "type": "array",
+            "items": {
+              "title": "string",
+              "description": "string",
+              "technologies": "array",
+              "category": "string",
+              "demoUrl": "string",
+              "sourceUrl": "string",
+              "featured": "boolean"
+            }
+          }
+        }
+      },
+      {
+        "id": "services",
+        "name": "Services Section",
+        "dataFile": "data/servicesData.ts",
+        "required": true,
+        "schema": {
+          "services": {
+            "type": "array",
+            "items": {
+              "title": "string",
+              "description": "string",
+              "features": "array"
+            }
+          }
+        }
+      },
+      {
+        "id": "process",
+        "name": "Process Section",
+        "dataFile": "data/processData.ts",
+        "required": true,
+        "schema": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "title": "string",
+              "description": "string"
+            }
+          }
+        }
+      },
+      {
+        "id": "contact",
+        "name": "Contact Section",
+        "dataFile": "data/personalData.ts",
+        "required": true,
+        "schema": {
+          "email": "string",
+          "phone": "string",
+          "telegram": "string",
+          "location": "string"
+        }
+      }
+    ],
+    "requirements": {
+      "node": ">=18.0.0",
+      "nextjs": ">=14.0.0"
+    },
+    "sampleData": true,
+    "appPath": "app",
+    "createdAt": "2025-05-18",
+    "updatedAt": "2025-05-18"
+  }
+}
